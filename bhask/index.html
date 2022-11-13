@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js"></script>
+    <title>Bhaskara</title>
+</head>
+
+<body>
+    <div id="cabecalho">
+
+        <div class="titulo">
+            Calculando Bhaskara
+        </div>
+    </div>
+    <main>
+        <form>
+            <div class="valores">
+                Valores:
+                <label for="a" class="valores">a:<input class="inputs" type="number" name="a" id="valorA"></input></label>
+
+                <label for="b" class="valores">b:<input class="inputs" type="number" name="b" id="valorB"></input></label>
+
+
+                <label for="c" class="valores">c:<input class="inputs" type="number" name="b" id="valorC"></input></label>
+
+            </div>
+
+            <input onclick="Enviar();return false" type="submit" id="enviar" name="enviar" value="Calcular">
+            <input type="reset" id="limpar" name="limpar" value="Limpar">
+
+
+        </form>
+        <div class="tabela">
+
+            <table>
+                <tr>
+                    <td>
+                        x =
+                    </td>
+                    <td class="borda">
+                        -b ± √△
+                    </td>
+                    <td class="delta">
+                        △ = b² -4.a.c
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="doisA">
+                        2a
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="celta">
+            △ delta:
+            <div id="delta">
+            </div>
+        </div>
+
+        <div class="resultado" id="resultado">
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
