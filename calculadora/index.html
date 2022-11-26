@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	
-	<title>Calculadora</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Calculadora</title>
 </head>
+
 <body>
-	<h1> Minha Calculadora</h1>
-	<br>Primeiro Número</br>
-	<input id="n1" type="number"></br>
+    <header>
+        <h1 id="cabecalho"> Minha Calculadora</h1>
+    </header>
 
-	<br>Segundo Número</br>
-	<input id ="n2" type='number'></br></br>
+    <main>
+        <form>
 
-	<button onclick="somar()">Soma</button>
-	<button onclick="subtrair()">Subtrair</button>
-	<button onclick="multiplicar()">Multiplicar</button>
-	<button onclick="dividir()">Dividir</button>
-	</br></br>
+            <div class="borda">
+                <input id="tela">
 
-	O resultado é <span></span>
+                <p>
+                    <input type="reset" value="AC" id="limpar" class="claro">
+                    <button onclick="deletar();return false" class="claro">C</button>
+                    <button onclick="porcentagem();return false" class="laranja">%</button>
+                    <button onclick="dividir();return false" class="laranja">÷</button>
+                </p>
+                <p>
 
-	<script>
-		//pegando os valores digita nos input e passando para uma variavel
-		var n1 = document.querySelector("#n1");
-		var n2 = document.querySelector("#n2");
-		var resultado = document.querySelector("span");
+                    <button onclick="sete()" class="cinza">7</button>
+                    <button onclick="oito()" class="cinza">8</button>
+                    <button onclick="nove()" class="cinza">9</button>
 
-		function somar(){
-			//somando os valores digitados
-			resultado.innerHTML = parseInt(n1.value)+(parseInt(n2.value));
-		}
+                    <button onclick="multiplicar();return false" class="laranja">x</button>
 
-		function subtrair(){
-			resultado.innerHTML = parseInt(n1.value)-(parseInt(n2.value));
-		}
+                </p>
 
-		function multiplicar(){
-			resultado.innerHTML = parseInt(n1.value)*(parseInt(n2.value));
-		}
+                <p>
 
-		function dividir(){
-			resultado.innerHTML = parseInt(n1.value)/(parseInt(n2.value));
-		}
+                    <button onclick="quatro()" class="cinza">4</button>
+                    <button onclick="cinco()" class="cinza">5</button>
+                    <button onclick="seis()" class="cinza">6</button>
 
+                    <button onclick="subtrair();return false" class="laranja">-</button>
+                </p>
 
+                <p>
+                    <button onclick="um()" class="cinza">1</button>
+                    <button onclick="dois()" class="cinza">2</button>
+                    <button onclick="tres()" class="cinza">3</button>
+                    <button <button onclick="somar();return false" class="laranja">+</button>
+                </p>
+                <p>
+                    <button id="zero" onclick="zero()" class="cinza">0</button>
+                    <button onclick="virgula()" class="cinza">.</button>
+                    <button onclick="resposta();return false" class="laranja">=</button>
+                </p>
 
+            </div>
+            <br>Primeiro Número</br>
+            <input id="n1" type="number"></br>
 
+            <br>Segundo Número</br>
+            <input id="n2" type='number'></br>
+            </br>
+            O resultado é <span></span>
 
-	</script>
-	
+        </form>
+    </main>
+
+    <script src="./script.js">
+    </script>
+
 </body>
+
 </html>

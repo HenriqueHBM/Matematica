@@ -1,0 +1,79 @@
+header {
+    background-color: darkred;
+    color: white;
+    height: 50px;
+    margin: -22px -6px;
+}
+
+#cabecalho {
+    padding: 10px;
+}
+
+br {
+    margin: 40px;
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+form {
+    margin: 0 auto;
+    width: fit-content
+}
+
+button,
+#limpar {
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin: 1px;
+    font-size: 20px;
+}
+
+p {
+    margin: 4px;
+}
+
+#zero {
+    width: 125px;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.cinza {
+    background-color: darkgray;
+}
+
+.claro {
+    background-color: gainsboro;
+    color: darkgray;
+}
+
+.laranja,
+.cinza,
+#tela {
+    color: white;
+}
+
+#tela {
+    padding: 4px;
+    text-align: right;
+    background-color: darkgray;
+    border: none;
+    height: 40px;
+    width: 93%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.borda {
+    padding: 15px;
+    background-color: lavender;
+    border-radius: 5px;
+}
