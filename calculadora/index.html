@@ -17,54 +17,53 @@
         <form>
 
             <div class="borda">
-                <input id="tela">
 
-                <p>
-                    <input type="reset" value="AC" id="limpar" class="claro">
-                    <button onclick="deletar();return false" class="claro">C</button>
-                    <button onclick="porcentagem();return false" class="laranja">%</button>
-                    <button onclick="dividir();return false" class="laranja">÷</button>
-                </p>
-                <p>
+                <div class="wrapper">
+                    <section class="screen">
+                        0
+                    </section>
+                </div>
 
-                    <button onclick="sete()" class="cinza">7</button>
-                    <button onclick="oito()" class="cinza">8</button>
-                    <button onclick="nove()" class="cinza">9</button>
 
-                    <button onclick="multiplicar();return false" class="laranja">x</button>
+                <section class="calc-buttons">
+                    <p>
+                        <button class="claro">AC</button>
+                        <button class="claro">C</button>
+                        <button class="laranja">%</button>
+                        <button class="laranja">&divide;</button>
+                    </p>
+                    <p>
 
-                </p>
+                        <button class="cinza">7</button>
+                        <button class="cinza">8</button>
+                        <button class="cinza">9</button>
 
-                <p>
+                        <button class="laranja">&times;</button>
 
-                    <button onclick="quatro()" class="cinza">4</button>
-                    <button onclick="cinco()" class="cinza">5</button>
-                    <button onclick="seis()" class="cinza">6</button>
+                    </p>
 
-                    <button onclick="subtrair();return false" class="laranja">-</button>
-                </p>
+                    <p>
 
-                <p>
-                    <button onclick="um()" class="cinza">1</button>
-                    <button onclick="dois()" class="cinza">2</button>
-                    <button onclick="tres()" class="cinza">3</button>
-                    <button <button onclick="somar();return false" class="laranja">+</button>
-                </p>
-                <p>
-                    <button id="zero" onclick="zero()" class="cinza">0</button>
-                    <button onclick="virgula()" class="cinza">.</button>
-                    <button onclick="resposta();return false" class="laranja">=</button>
-                </p>
+                        <button class="cinza">4</button>
+                        <button class="cinza">5</button>
+                        <button class="cinza">6</button>
 
+                        <button class="laranja">&minus;</button>
+                    </p>
+
+                    <p>
+                        <button class="cinza">1</button>
+                        <button class="cinza">2</button>
+                        <button class="cinza">3</button>
+                        <button class="laranja">&plus;</button>
+                    </p>
+                    <p>
+                        <button id="zero" class="cinza">0</button>
+                        <button class="cinza">.</button>
+                        <button class="laranja">&equals;</button>
+                    </p>
+                </section>
             </div>
-            <br>Primeiro Número</br>
-            <input id="n1" type="number"></br>
-
-            <br>Segundo Número</br>
-            <input id="n2" type='number'></br>
-            </br>
-            O resultado é <span></span>
-
         </form>
     </main>
 
