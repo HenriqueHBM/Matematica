@@ -3,7 +3,7 @@
  let buffer = "0";
  let previousOperator;
 
- const screen = document.querySelector('.tela');
+ const tela = document.querySelector('.tela');
 
  function buttonClick(value) {
      //verificando se o valor é string ou valor(int/float);
