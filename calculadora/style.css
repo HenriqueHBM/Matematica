@@ -60,20 +60,24 @@ p {
     color: white;
 }
 
-#tela {
-    padding: 4px;
-    text-align: right;
-    background-color: darkgray;
-    border: none;
-    height: 40px;
-    width: 93%;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
 .borda {
     padding: 15px;
     background-color: lavender;
     border-radius: 5px;
+}
+
+.tela {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: darkgrey;
+    border: none;
+    border-radius: 5px;
+    color: darkolivegreen;
+    overflow: auto;
+    text-align: right;
+    font-size: 30px;
+    height: 40px;
+    width: 260px;
+    padding: 5px;
+    margin: 10px 0 20px 0px;
 }
